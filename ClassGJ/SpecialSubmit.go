@@ -39,6 +39,6 @@ func SpecialSubmit(title string, workid string, filepath string, member_id strin
 		SetSuccessResult(&response).
 		Post("https://a.welife001.com/applet/notify/feedbackWithOss")
 	if response.Code == 0 {
-		fmt.Println("成功完成" + title + "青年大学习!")
+		fmt.Println("成功完成" + title)
 	}
 }
