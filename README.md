@@ -18,6 +18,7 @@ Cookie字段为江苏共青团凭证
 Imprint字段为班级小管家凭证
 
 identity字段功能开发中，无需配置
+------------
 ### 编译命令
 ```go
 go build main.go
