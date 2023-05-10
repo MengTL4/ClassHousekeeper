@@ -20,7 +20,7 @@ Cookie字段为江苏共青团凭证
 ![](https://github.com/MengTL4/AutoDaXueXi/blob/main/image/1.png)
 Imprint字段为班级小管家凭证
 ![](https://github.com/MengTL4/AutoDaXueXi/blob/main/image/2.png)
-identity字段功能开发中，无需配置
+identity字段为区分管理员身份，默认是学委，不用改，如果为老师，请改为1
 
 ------------
 
