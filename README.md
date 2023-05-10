@@ -17,9 +17,9 @@
 }
 ```
 Cookie字段为江苏共青团凭证
-
+![](https://github.com/MengTL4/AutoDaXueXi/blob/main/image/1.png)
 Imprint字段为班级小管家凭证
-
+![](https://github.com/MengTL4/AutoDaXueXi/blob/main/image/2.png)
 identity字段功能开发中，无需配置
 
 ------------
