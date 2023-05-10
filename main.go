@@ -28,4 +28,5 @@ func main() {
 	pngfilepath := ClassGJ.SubmitPNG(pngkey, XCosSecurityToken, Authorization)
 	//提交作业
 	ClassGJ.SubmitDataStudent(title, workid, createat, pngfilepath, member_id, imprint, investid, subjectid, itemdetails1, itemdetails2)
+	fmt.Scanln()
 }
