@@ -1,5 +1,5 @@
-# AutoDaXueXi
-Basic functionality
+# XunYouRB
+Basic functionality on CiYuanJi
 Based on the Android client API, the body decryption is simply implemented, and all request parameters pass the verification normally, which can be easily downloaded
 
 ------------
