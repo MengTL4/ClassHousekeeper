@@ -1,31 +1,22 @@
 # AutoDaXueXi
-自动化实现：江苏共青团青年大学习+班级小管家截图提交
-- 快捷配置
-- 适配班级小管家数据结构
-- 可配置定时任务
+Basic functionality
+Based on the Android client API, the body decryption is simply implemented, and all request parameters pass the verification normally, which can be easily downloaded
 
 ------------
 
 
-### 使用说明
-完成config.json配置即可开始使用
-```json
-{
-  "Cookie" : "",
-  "Imprint" : "",
-  "identity": ""
-}
-```
-Cookie字段为江苏共青团凭证
-![](https://github.com/MengTL4/AutoDaXueXi/blob/main/image/1.png)
-Imprint字段为班级小管家凭证
-![](https://github.com/MengTL4/AutoDaXueXi/blob/main/image/2.png)
-identity字段为区分管理员身份，默认是学委，不用改，如果为老师，请改为1
-
-------------
-
-
-### 编译命令
+### Instructions for use
+Configure your own token in the variable Token of the request.go file (obtained by capturing packets)
 ```go
-go build main.go
+var (
+	headers = map[string]string{
+		"Channel":     "35",
+		"User-Agent":  "Mozilla/5.0 (Linux; Android 11; Pixel 4 XL Build/RP1A.200720.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.115 Mobile Safari/537.36",
+		"Targetmodel": "SM-N9700",
+		"Platform":    "1",
+		"Deviceno":    "d0b7cef20c3c6b5f",
+		"Version":     "3.3.2",
+		"Token":       "",
+	}
+)
 ```
