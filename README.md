@@ -1,4 +1,4 @@
-# AutoDaXueXi
+# ClassHousekeeper
 自动化实现：班级小管家作业(青年大学习)截图提交
 
 - 快捷配置
