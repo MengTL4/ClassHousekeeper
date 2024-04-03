@@ -5,13 +5,15 @@ import (
 	"github.com/imroc/req/v3"
 	"io"
 	"log"
-	"net/http"
 	"regexp"
 )
 
 func Download() {
+	client := req.C()
+	client.ImpersonateChrome()
 	// 发送HTTP请求并获取HTML内容
-	response, err := http.Get("https://news.cyol.com/gb/channels/vrGlAKDl/index.html")
+	//response, err := http.Get("https://news.cyol.com/gb/channels/vrGlAKDl/index.html")
+	response, err := client.R().Get("https://news.cyol.com/gb/channels/vrGlAKDl/index.html")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -38,7 +40,7 @@ func Download() {
 	})
 	regex := regexp.MustCompile(`\/([^/]+)\/m.html$`)
 	match := regex.FindStringSubmatch(hrefs[0])
-	client := req.C()
+
 	get, err := client.R().SetOutputFile("test.png").
 		SetPathParams(map[string]string{
 			"id": match[1],
